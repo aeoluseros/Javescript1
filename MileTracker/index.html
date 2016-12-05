@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--we are going to implement this as multi-page jquery ui-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="contents/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="contents/jquery-ui.min.css">
+    <link rel="stylesheet" href="contents/style.css">
+
+    <script src="scripts/jquery-1.12.4.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        $(function(){
+           $('.date').each(function(){
+                $(this).datepicker();
+            })
+        });
+    </script>
+</head>
+<body>
+    <!-- HomePage -->
+    <div data-role="page" id="home">
+        <header data-role="header" data-theme="b">
+            <h1>MileTracker</h1>
+        </header>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+                <li><a href="#add" data-transition="none" data-icon="plus">Add Run</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <h3>Welcome to the MileTracker App</h3>
+            <p>With this app, you can track your running, jogging or walking miles.</p>
+
+            <h3>Your Latest Runs</h3>
+
+            <ul id="stats" data-role="listview" data-filter="true"
+                data-filter-placeholder="Filter runs by date or distance"
+                data-insert="true"></ul>
+            <br>
+            <button id="clearRuns" onclick="return confirm('Are You Sure?')" data-theme="b">Clear Total Mileage</button>
+        </div>
+        <footer data-role="footer" data-theme="b">
+            <h4>MileTracker Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>, All Rights Reserved</h4>
+        </footer>
+    </div>
+
+    <!--Add Page-->
+    <div data-role="page" id="add">
+        <header data-role="header" data-theme="b">
+            <h1>MileTracker</h1>
+        </header>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+                <li><a href="#add" data-transition="none" data-icon="plus">Add Run</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <h3>Add Run</h3>
+            <form id="addForm">
+                <label for = "addMiles">Enter Miles: </label>
+                <input type="text" id="addMiles">
+
+                <label for="addDate">Enter Date:</label>
+                <input type="text" data-role="date" class="date" id="addDate" data-inline="true">
+
+                <button id="submitAdd" class="ui-btn ui-btn-corner-all">Submit</button>
+            </form>
+
+        </div>
+
+        <footer data-role="footer" data-theme="b">
+            <h4>MileTracker Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>, All Rights Reserved</h4>
+        </footer>
+    </div>
+</body>
+</html>
+

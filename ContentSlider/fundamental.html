@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{color:red;}
+        .green{color:green;}
+    </style>
+
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function(){
+/*            $('.myLink').on('click', function(){
+                //$('h1').addClass('red');
+                //$('h1').fadeToggle(500);  //500 milli-second; fadeToggle, fadeIn
+                $('h1').slideToggle(500);  //500 milli-second; slideUp, slideDown
+            });
+
+            $('.myLink').on('mouseenter', function(){
+                $('h1').addClass('red');
+                //$('h1').fadeToggle(500);  //500 milli-second; fadeToggle, fadeIn
+                $('h1').slideToggle(500);  //500 milli-second; slideUp, slideDown
+            });
+
+            $('.myLink').on('mouseleave', function(){
+                $('h1').removeClass('red');
+                //$('h1').fadeToggle(500);  //500 milli-second; fadeToggle, fadeIn
+                $('h1').slideDown(500);  //500 milli-second; slideUp, slideDown
+            });*/
+            $('.myLink').click(function(){
+                //$('h1').text("Hello world~");
+                //$('h1').replaceWith('<h3>Hello World</h3>');
+                //$('h1').append('<h3>Hello World</h3>');
+                $('h1').css('font-size','40px')
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome Everyone</h1>
+    <a href = "#"  class="myLink">Click Me</a>
+</body>
+</html>

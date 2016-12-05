@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn Javascript</title>
+    <script>
+        "use strict";
+        document.write("Normally you want javascript in your head or in a different file");
+        var firstName = 'John';
+        var lastName = 'Doe';
+        //alert('Hi, my name is ' + firstName + ' ' + lastName);
+        if(firstName=='John'){
+           // alert('yes, I\'m John.');
+        }else if(firstName=="Steve"){
+           // alert('Yes, I\'m Steve');
+        }else{
+           // alert('No, I\'m not John or Steve');
+        }
+
+        var cars = new Array();
+//        cars[0] = 'Toyota';
+//        cars[1] = 'Honda';
+//        cars[3] = 'Ford';
+
+        cars = ['Toyota','Honda',,'Ford'];
+//        alert(cars[1]);  //undefined
+        for(var i = 0;i<cars.length;i++){
+            console.log(cars[i]);
+        }
+
+        function sayHi(word){   //shouldn't have var
+            alert(word);
+        }
+
+        sayHi('Hello');
+
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <script>document.write("Hello World!");</script>
+</body>
+</html>

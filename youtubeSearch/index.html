@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Youtube</title>
+    <link rel="stylesheet" href="contents/style.css">
+    <link rel="stylesheet" href="contents/jquery.fancybox.css">
+
+    <!--<script src = "scripts/jquery-3.1.1.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src = "scripts/jquery-2.2.4.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/jquery.fancybox.pack.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox();
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Search</h1>
+            <p>Search all Youtube Videos</p>
+        </header>
+        <section>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <div class="field-container">
+                    <input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+                    <input type="submit" name="search-btn" id="search-btn" value="">
+                </div>
+            </form>
+            <ul id="results"></ul>
+            <div id="buttons"></div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2016, All Rights Reserved</p>
+        </footer>
+
+
+
+    </div>
+</body>
+</html>

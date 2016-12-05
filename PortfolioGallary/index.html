@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallary | View Portfolio</title>
+
+    <link rel="stylesheet" href="contents/style.css">
+    <link rel="stylesheet" href="contents/lightbox.css">
+    <script src="scripts/jquery-2.2.4.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/lightbox.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Gallary</h1>
+            <nav>
+                <ul>
+                    <!--using # to go nowhwere as javascript could handle it.-->
+                    <li><a href="#">All Projects</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">CMS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="tagline">
+        <div class="container">
+            <h1>View Our Work</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 id="heading">All Projects</h1>
+            <ul id="gallery">
+                <li class="design"><a href="img/web1.jpg" data-lightbox="projects" data-title="Project 1" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web1.jpg"></a></li>
+                <li class="design programming"><a href="img/web2.jpg" data-lightbox="projects" data-title="Project 2" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web2.jpg"></a></li>
+                <li class="design cms"><a href="img/web3.jpg" data-lightbox="projects" data-title="Project 3" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web3.jpg"></a></li>
+                <li class="design cms programming"><a href="img/web4.jpg" data-lightbox="projects" data-title="Project 4" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web4.jpg"></a></li>
+                <li class="cms"><a href="img/web5.jpg" data-lightbox="projects" data-title="Project 5" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web5.jpg"></a></li>
+                <li class="cms programming"><a href="img/web6.jpg" data-lightbox="projects" data-title="Project 6" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web6.jpg"></a></li>
+                <li class="programming"><a href="img/web7.jpg" data-lightbox="projects" data-title="Project 7" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web7.jpg"></a></li>
+                <li class="design programming"><a href="img/web8.jpg" data-lightbox="projects" data-title="Project 8" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web8.jpg"></a></li>
+                <li class="cms"><a href="img/web9.jpg" data-lightbox="projects" data-title="Project 8" data-desc="Interview Questions on Measures, Actions, and Storage"><img src="img/web9.jpg"></a></li>
+                <li class="programming"><a href="img/web10.jpg" data-lightbox="projects"><img src="img/web10.jpg"></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

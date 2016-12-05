@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Arial', sans-serif;
+    font-size:14px;
+    color:#fff;
+    background: #333;
+    line-height: 1.6em;   /*1em is equal to the current font size. 2em means 2 times the size of the current font.
+                          E.g., if an element is displayed with a font of 12 pt, then '2em' is 24 pt. The 'em' is a
+                          very useful unit in CSS, since it can adapt automatically to the font that the reader uses*/
+}
+
+#{
+    color:#fff;
+    text-decoration:none;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container{
+    width:980px;
+    margin:40px auto;
+    overflow: hidden;
+}
+
+#slider{
+    width: 940px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: #666 solid 2px;
+    border-radius: 5px;
+}
+
+#slider img{
+    width:940px;
+    height:350px;
+}
+
+.slide{
+    position:absolute;
+}
+
+.slide-copy{
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding:20px;
+    background: #7f7f7f;
+    background: rgba(0,0,0,0.5);  /*0.5a is for opacity.*/
+}
+
+
+#prev, #next{
+    float:left;
+    margin-top:130px;
+    cursor:pointer;
+    position: relative;
+    z-index:100;  /* The z-index property specifies the stack order of an element. An element with greater stack
+                    order is always in front of an element with a lower stack order.
+                    To create a tooltip for an image, use the title attribute!*/
+}
+
+#prev{
+    margin-right:-45px;
+}
+
+#next{
+    margin-left:-45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
